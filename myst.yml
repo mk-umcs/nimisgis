@@ -1,0 +1,21 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b33ccfb5-3cd6-4b4a-aeda-c861e86aa576
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  # github: https://github.com/mk-umcs/nimisgis
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: index.md
+    - title: Zadania
+      children:
+        - file: zadania/zestaw-01/zestaw-01.md
+        - file: zadania/zestaw-02/zestaw-02.md
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
