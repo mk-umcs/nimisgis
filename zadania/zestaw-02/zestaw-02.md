@@ -14,7 +14,7 @@
    **Przydatne zasoby:**
    * [polecenie `gdalinfo`](https://gdal.org/programs/gdalinfo.html)
    * [moduł `json`](https://docs.python.org/3/library/json.html)
-   * [przykładowe pliki rastrowe](https://box.pionier.net.pl/d/bf9ba81bb43744ccbbbc/)
+   * [przykładowe pliki rastrowe](https://box.pionier.net.pl/d/c7c1742c491148e5835d/?p=%2Frastry)
 
 (run-sequence)=
 2. Napisz program, który uruchomi kolejno następujący ciąg poleceń:
@@ -40,7 +40,7 @@
    * [polecenie `gdaldem`](https://gdal.org/programs/gdaldem.html)
    * [funkcja `glob.glob`](https://docs.python.org/3/library/glob.html#glob.glob)
    * [funkcja `tempfile.gettempdir`](https://docs.python.org/3/library/tempfile.html#tempfile.gettempdir)
-   * [przykładowe pliki z numerycznym modelem terenu](https://box.pionier.net.pl/d/f01c92f35504427d9e04/?p=/rastry/dem)
+   * [przykładowe pliki z numerycznym modelem terenu](https://box.pionier.net.pl/d/c7c1742c491148e5835d/?p=%252Frastry%252Fdem)
 
 (run-sequence-size)=
 3. Popraw program z {ref}`poprzedniego zadania <run-sequence>` tak, żeby dodatkowo wyświetlał informację o rozmiarach rastrów w utworzonych przez siebie plikach (`dem.tif`, `slope.tif`, `slope4326.tif`). Rozmiary rastrów mają być uzyskane za pomocą polecenia [`gdalinfo`](https://gdal.org/programs/gdalinfo.html) (tak jak w pierwszym zadaniu).
@@ -106,7 +106,7 @@
    Program ma w przypadku nieznalezienia któregoś z plików do uruchomienia ([`ogrinfo`](https://gdal.org/programs/ogrinfo.html) lub [`gdaltransform`](https://gdal.org/programs/gdaltransform.html)) przerywać działanie z odpowiednim komunikatem na wyjściu błędów i kodem wyjścia różnym od zera (funkcja [`subprocess.run`](https://docs.python.org/3/library/subprocess.html#subprocess.run) wyrzuca wyjątek [`FileNotFoundError`](https://docs.python.org/3/library/exceptions.html#FileNotFoundError) jeżeli plik wykonywalny polecenia nie zostanie znaleziony).
 
 (zad-7)=
-7. W pliku [`lubelskie.tif`](https://box.pionier.net.pl/d/f01c92f35504427d9e04/files/?p=%2Frastry%2Flubelskie.tif) znajduje się numeryczny model terenu dla województwa lubelskiego w układzie odniesienia EPSG:2180. Napisz program, który dla pobranej od użytkownika nazwy miejscowości spróbuje wyciągnąć z pliku kwadratowy obszar o boku 25 km, którego środek znajduje się w zadanej miejscowości. Obszar ten ma być zapisany do pliku `miejscowosc.tif`, gdzie fragment `miejscowosc` ma być zastąpiony faktyczną nazwą miejscowości (np. `Lublin.tif`).
+7. W pliku [`lubelskie.tif`](https://box.pionier.net.pl/d/c7c1742c491148e5835d/files/?p=%2Frastry%2Flubelskie.tif) znajduje się numeryczny model terenu dla województwa lubelskiego w układzie odniesienia EPSG:2180. Napisz program, który dla pobranej od użytkownika nazwy miejscowości spróbuje wyciągnąć z pliku kwadratowy obszar o boku 25 km, którego środek znajduje się w zadanej miejscowości. Obszar ten ma być zapisany do pliku `miejscowosc.tif`, gdzie fragment `miejscowosc` ma być zastąpiony faktyczną nazwą miejscowości (np. `Lublin.tif`).
 
    Do pobrania współrzędnych miejscowości użyj odpowiednio polecenia [`ogrinfo`](https://gdal.org/programs/ogrinfo.html). Do przekształcenia współrzędnych na układ EPSG:2180 użyj polecenia [`gdaltransform`](https://gdal.org/programs/gdaltransform.html). Do wycięcia zadanego obszaru użyj polecenia [`gdal_translate`](https://gdal.org/programs/gdal_translate.html).
 
@@ -123,4 +123,4 @@
    Program ma w przypadku nieznalezienia któregoś z plików do uruchomienia ([`ogrinfo`](https://gdal.org/programs/ogrinfo.html), [`gdaltransform`](https://gdal.org/programs/gdaltransform.html) lub [`gdal_translate`](https://gdal.org/programs/gdal_translate.html)) przerywać działanie z odpowiednim komunikatem na wyjściu błędów i kodem wyjścia różnym od zera.
 
    **Przydatne zasoby:**
-   * [plik `lubelskie.tif`](https://box.pionier.net.pl/d/f01c92f35504427d9e04/files/?p=%2Frastry%2Flubelskie.tif)
+   * [plik `lubelskie.tif`](https://box.pionier.net.pl/d/c7c1742c491148e5835d/files/?p=%2Frastry%2Flubelskie.tif)

@@ -14,6 +14,9 @@ project:
       children:
         - file: zadania/zestaw-01/zestaw-01.md
         - file: zadania/zestaw-02/zestaw-02.md
+    - title: Dodatkowe materiały
+      children:
+        - file: materialy/cli.md
 site:
   template: book-theme
   # options:
