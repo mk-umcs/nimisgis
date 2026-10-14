@@ -16,9 +16,12 @@ project:
         - file: zadania/zestaw-02/zestaw-02.md
     - title: Dodatkowe materiały
       children:
+        - file: materialy/pixi-tutorial.md
         - file: materialy/cli.md
 site:
   template: book-theme
-  # options:
+  options:
+    logo_text: Narzędzia i metody integracji systemów GIS (geoinformatyka)
   #   favicon: favicon.ico
   #   logo: site_logo.png
+
